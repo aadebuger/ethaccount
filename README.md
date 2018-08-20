@@ -31,4 +31,4 @@ personal.unlockAccount("441f8bcac4d0745616638303cf7e4248615bc292")
 eth.sendTransaction({from:"441f8bcac4d0745616638303cf7e4248615bc292", to:"4c9a8290e2a880669d1281e052dd6bcccad3ab72", value: web3.toWei(0.05, "ether")})
 
 
-
+admin.addPeer("enode://7bcabddc477dfaf7494d435f7d24ac02de8b9d9ccea955f933fc4631582536b2b1d325a5ffd1529d33faba56386ef3a878c350b05529955458583b1cb56b58c9@[127.0.0.1]:2000"]
