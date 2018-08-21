@@ -21,6 +21,7 @@ enode://544405669cea4c84143809850d25caf5f4a0dc3ce54e46831200fe887f5c21281f3debf3
 enode://544405669cea4c84143809850d25caf5f4a0dc3ce54e46831200fe887f5c21281f3debf380cf0fc23cc788b9520c6b975584e302d40b11e5832713e1df0ba4fd@127.0.0.1:2000
 
 
+
 admin.addPeer("enode://544405669cea4c84143809850d25caf5f4a0dc3ce54e46831200fe887f5c21281f3debf380cf0fc23cc788b9520c6b975584e302d40b11e5832713e1df0ba4fd@127.0.0.1:2000")
 
 
@@ -32,3 +33,13 @@ eth.sendTransaction({from:"441f8bcac4d0745616638303cf7e4248615bc292", to:"4c9a82
 
 
 admin.addPeer("enode://7bcabddc477dfaf7494d435f7d24ac02de8b9d9ccea955f933fc4631582536b2b1d325a5ffd1529d33faba56386ef3a878c350b05529955458583b1cb56b58c9@[127.0.0.1]:2000"]
+
+
+output = subprocess.check_output(
+    ["geth", "--datadir=./data","account","new"],
+    input=b"13906917736\n13906917736",
+)
+ m = re.search('\{[a-fA-F0-9]{40}\}',outputstr)
+outputstr=output.decode()
+m = re.search('\{[a-fA-F0-9]{40}\}',outputstr
+m.group(0)
